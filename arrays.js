@@ -1,26 +1,29 @@
 //////////////////PROBLEM 1////////////////////
 /* Create a copy of the faveColors array called 'colorCopy' using the slice method. */
-
 const faveColors = ['red', 'green', 'black']
-
 //CODE HERE
+colorCopy = faveColors.slice(0)
+console.log("Favorite Colors array:");
+console.log(colorCopy);
 
 //////////////////PROBLEM 2////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
-
 //CODE HERE
-
+colorCopy.push("purple")
+console.log("\nCopied array with 'Purple' appended:");
+console.log(colorCopy);
 //////////////////PROBLEM 3////////////////////
 /*
   Using an array method, create a new array called 'middleNums' from the 
   numbers array that will capture only the middle numbers (2, 3, 4).
 */
-
 const numbers = [1, 2, 3, 4, 5]
-
 //CODE HERE
-
-
+middleNums = numbers.slice(0)
+middleNums.pop()
+middleNums.shift()
+console.log("\nMiddle Numbers Only:");
+console.log(middleNums);
 //////////////////PROBLEM 4////////////////////
 /* 
   Create an empty array called 'answers'.
@@ -30,7 +33,5 @@ const numbers = [1, 2, 3, 4, 5]
   If the number is LESS than or EQUAL to 100, push 'small' as a string 
   to the answers array. 
 */
-
 const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
-
 // CODE HERE
