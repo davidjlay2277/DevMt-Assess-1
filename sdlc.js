@@ -15,7 +15,7 @@
 // SOLTION 1: //
 //Declare a variable for each sdlc step, defining each as a string equivilant to that sdlc step
 const planning = "Planning"
-const implementation = "Implementation"git 
+const implementation = "Implementation"
 const design = "Design"
 const maintain = "Maintain"
 const analysisRequirements = "Analysis of Requirements"
