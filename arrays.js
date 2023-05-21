@@ -24,6 +24,7 @@ middleNums.pop()
 middleNums.shift()
 console.log("\nMiddle Numbers Only:");
 console.log(middleNums);
+console.log();
 //////////////////PROBLEM 4////////////////////
 /* 
   Create an empty array called 'answers'.
@@ -35,3 +36,18 @@ console.log(middleNums);
 */
 const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 // CODE HERE
+console.log("Big or Small Array Solution:")
+console.log(JSON.stringify(bigOrSmallArray));
+
+let answers = []
+let n = bigOrSmallArray.length
+for (let i = 0; i < n; i++) {
+      if (bigOrSmallArray[i] > 100) {
+        answers.push('big');
+      }
+        else {
+            answers.push('small');
+        }
+    }
+console.log(JSON.stringify(answers));
+//console.log(n);
