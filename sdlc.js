@@ -12,6 +12,7 @@
 // Testing & Integration
 // Planning
 
+//Remote Repo: https://github.com/davidjlay2277/DevMt-Assess-1
 // SOLTION 1: //
 //Declare a variable for each sdlc step, defining each as a string equivilant to that sdlc step
 const planning = "Planning"
