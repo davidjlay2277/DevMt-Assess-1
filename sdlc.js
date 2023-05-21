@@ -14,7 +14,7 @@
 
 //Remote Repo: https://github.com/davidjlay2277/DevMt-Assess-1
 
-////////////////// SOLUTION 1: ///////////////////
+////////////////// BEGIN SOLUTION 1: ///////////////////
 
 //Declare a variable for each sdlc step, defining each as a string equivilant to that sdlc step
     const planning = "Planning"
@@ -40,6 +40,7 @@
         "\nStep 4: " + step4 + 
         "\nStep 5: " + step5 + 
         "\nStep 6: " + step6);
+////////////////// END SOLUTION 1: ///////////////////
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -48,7 +49,7 @@
 */
 // PROVIDED code, moved to solution 1: const planning = "This is the first step, in which the end goal of the software is determined and defined. Developers typically will see what systems are already in place, and determine what features will need to be added." 
 
-////////////////////SOLUTION 2 ///////////////////
+//////////////////// BEGIN SOLUTION 2 ///////////////////
 //Declare vaibles s[n]Descr as the descirpint of a given step [n]
     let s1Descr = "This is the first step, in which the end goal of the software is determined and defined. Developers typically will see what systems are already in place, and determine what features will need to be added." 
     let s2Descr = "After planning, the next step is to determine the business requirements and, at times, the technical requirements at a high level. The developers may work with the customers, clients and/or business analysts to clearly define what the software needs to be able to do in order to be considered successful. Along with planning, this step can include defining scope and identifying potential risks and challenges."
@@ -68,5 +69,9 @@
         "\n\n5. " + step5 + "\n" + s5Descr +
         "\n\n6. " + step6 + "\n" + s6Descr);
 
+////////////////// END SOLUTION 2: ///////////////////
+
+
+//Assessment name: SDLC
 //Completed: 5/21/23
 //Author: David Lay
