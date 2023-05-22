@@ -51,9 +51,33 @@ const pinkPrice = .55
 
 // CODE HERE
 
+/////////////// BEGIN SOLUTION 1 /////////////////
+//Declare variables for the total acres (example: 'fujiSum') of each variety of apple and set the value equal to 0 so that values form the array can later be added.
+let fujiSum = 0
+let galaSum = 0
+let pinkSum = 0
 
+//For each varitey, add each value from the array (acres each day) to the total acre variable declared for that variey. 
 
+//use a for loop to grab each value in the array 'fujiAcres' and add that value to 'fujiSum'
+for (let f = 0; f < fujiAcres.length; f++)
+    {fujiSum += fujiAcres[f]}
+//use a for loop to grab each value in the array 'galaAcres' and add that value to 'galaSum'  
+for (let g = 0; g < galaAcres.length; g++)
+    {galaSum += galaAcres[g]}
+//use a for loop to grab each value in the array 'galaAcres' and add that value to 'pinkSum'  
+for (let p = 0; p < pinkAcres.length; p++)
+    {pinkSum += pinkAcres[p]}
+    
+//Declare a variable 'totalAcres' and calculate the sum of all acres picked using the sum of each varity
+let totalAcres = fujiSum + galaSum + pinkSum
 
+//print the sum of acres picked for each variey and the total acres picked. 
+console.log(fujiSum + " acres of fuji");
+console.log(galaSum + " acres of gala");
+console.log(pinkSum + " acres of pink ladies\n");
+console.log(totalAcres + " total acres picked");
+/////////////// END SOLUTION 1 /////////////////
 
 // PROBLEM 2
 
@@ -68,10 +92,10 @@ const pinkPrice = .55
 */
 
 // CODE HERE
-
-
-
-
+/////////////// BEGIN SOLUTION 2 /////////////////
+let averageDailyAcres = totalAcres / 7
+console.log("Average acres piked per day is " + averageDailyAcres); 
+/////////////// END SOLUTION 2 /////////////////
 
 // PROBLEM 3
 
@@ -99,18 +123,21 @@ const pinkPrice = .55
     calculate this number. But! It is a great
     way to get a whole number without using 
     any Math methods. 
-
 */
 
 let acresLeft = 174 
 let days = 0
 
 // CODE HERE
-
-
+/////////////// BEGIN SOLUTION 3 /////////////////
+while (acresLeft > 0) {
+    days += 1
+    acresLeft -= averageDailyAcres
+}
+console.log(days);
+/////////////// END SOLUTION 3 /////////////////
 
 // PROBLEM 4
-
 /*
     Your next task is to create 3 arrays
     that list the daily amount of apples 
@@ -135,13 +162,9 @@ let days = 0
 
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
-
-
-
-
+//let fujiTons =
+//let galaTons =
+//let pinkTons =
 
 
 // PROBLEM 5
