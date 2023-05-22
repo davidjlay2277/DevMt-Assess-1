@@ -1,7 +1,6 @@
 ///////////////////
 // Apple Orchard //
 ///////////////////
-
 /*
     The data below has been collected over the 
     last week at an apple orchard. You will be 
@@ -26,7 +25,6 @@
     The prices are per pound and are written
     in cents. 
 */
-
 const fujiAcres = [2, 3, 3, 2, 2, 2, 1]
 const galaAcres = [5, 2, 4, 3, 6, 2, 4]
 const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
@@ -35,10 +33,7 @@ const fujiPrice = .89
 const galaPrice = .64
 const pinkPrice = .55
 
-
-
 // PROBLEM 1
-
 /*
     Using for loop, calculate the total number
     of acres picked for the entire week.
@@ -48,7 +43,6 @@ const pinkPrice = .55
 
     Log `totalAcres` to the console.
 */
-
 // CODE HERE
 
 /////////////// BEGIN SOLUTION 1 /////////////////
@@ -80,7 +74,6 @@ console.log(totalAcres + " total acres picked");
 /////////////// END SOLUTION 1 /////////////////
 
 // PROBLEM 2
-
 /*
     Using `totalAcres`, calculate the average 
     number of acres picked per day. 
@@ -90,15 +83,14 @@ console.log(totalAcres + " total acres picked");
 
     Log `averageDailyAcres` to the console.
 */
-
 // CODE HERE
+
 /////////////// BEGIN SOLUTION 2 /////////////////
 let averageDailyAcres = totalAcres / 7
 console.log("Average acres piked per day is " + averageDailyAcres); 
 /////////////// END SOLUTION 2 /////////////////
 
 // PROBLEM 3
-
 /*
     We have provided 2 variables below. 
     
@@ -124,11 +116,10 @@ console.log("Average acres piked per day is " + averageDailyAcres);
     way to get a whole number without using 
     any Math methods. 
 */
-
 let acresLeft = 174 
 let days = 0
-
 // CODE HERE
+
 /////////////// BEGIN SOLUTION 3 /////////////////
 while (acresLeft > 0) {
     days += 1
@@ -161,12 +152,12 @@ console.log(days + " day(s) left to complete production\n");
 */
 // CODE HERE
 
+/////////////// BEGIN SOLUTION 4 /////////////////
 let fujiTons = []
 let galaTons = []
 let pinkTons = []
 const Ayield = 6.5
-
-//use a for loop to grab each value in the array 'fujiAcres' and add that value to 'fujiSum'
+    //use a for loop to grab each value in the array 'fujiAcres' and add that value to 'fujiSum'
 for (let f1 = 0; f1 < fujiAcres.length; f1++)
         {fujiTons.push(fujiAcres[f1] * Ayield) }
 
@@ -175,12 +166,13 @@ for (let g1 = 0; g1 < galaAcres.length; g1++)
 
 for (let p1 = 0; p1 < pinkAcres.length; p1++)
         {pinkTons.push(pinkAcres[p1] * Ayield) }
-
+    //Log 
     console.log("Fuji Tons: "+ JSON.stringify(fujiTons));
     console.log("Gala Tons: "+ JSON.stringify(galaTons));
     console.log("Pink Lady Tons: "+ JSON.stringify(pinkTons) +"\n");
-// PROBLEM 5
+/////////////// END SOLUTION 4 /////////////////
 
+    // PROBLEM 5
 /*
     Next, calculate the total number of 
     pounds picked per variety.
@@ -194,42 +186,41 @@ for (let p1 = 0; p1 < pinkAcres.length; p1++)
 
     Hint: there are 2000 pounds in a ton.
 */
+// CODE HERE
 
-// CODE HERE 
-//declare variables for the sum in Tons of each variety picked
+/////////////// BEGIN SOLUTION 5 /////////////////
+    //declare variables for the sum in Tons of each variety picked
 let fujiTonSum = 0
 let galaTonSum = 0
 let pinkTonSum = 0
-//similar top for loops in SOLUTION 2. 
-// Create a sume foe ake caules from the arrays with Tons, and create a sume for 
+    //similar top for loops in SOLUTION 2. 
+    // Create a sume foe ake caules from the arrays with Tons, and create a sume for 
 for (let f2 = 0; f2 < fujiTons.length; f2++)
     {fujiTonSum += fujiTons[f2]}
 for (let g2 = 0; g2 < galaTons.length; g2++)
     {galaTonSum += galaTons[g2]}
 for (let p2 = 0; p2 < pinkTons.length; p2++)
     {pinkTonSum += pinkTons[p2]}
-//declare variables for the pounds picked for each variety, using a calculaiton of total Tons
+    //declare variables for the pounds picked for each variety, using a calculaiton of total Tons
 let fujiPounds = fujiTonSum * 2000 
 let galaPounds = galaTonSum * 2000
 let pinkPounds = pinkTonSum * 2000
-//calcualte total tons and total pounds
+    //calcualte total tons and total pounds
 let totalTons = fujiTonSum + galaTonSum + pinkTonSum 
 let totalPounds = totalTons * 2000
-//Pring the sum in tons and pouds for each variety
-
+    //Pring the sum in tons and pouds for each variety
 console.log(fujiTonSum + " tons of fuji");
 console.log("(" + fujiPounds + " pounds)\n");
 console.log(galaTonSum + " tons of gala");
 console.log("(" + galaPounds + " pounds)\n");
 console.log(pinkTonSum + " tons of pink lady");
 console.log("(" + pinkPounds + " pounds)\n");
-// print the total in tons and pounds
+    // print the total in tons and pounds
 console.log(totalTons + " total tons picked");
 console.log("(" + totalPounds + " pounds)\n");
-
+/////////////// END SOLUTION 5 /////////////////
 
 // PROBLEM 6
-
 /*
     Now that you know the total pounds
     per variety, use the prices given 
@@ -245,24 +236,18 @@ console.log("(" + totalPounds + " pounds)\n");
     Log each of the profits to the 
     console. 
 */
-
 // CODE HERE
-
-let fujiProfit = fujiPounds * fujiPrice / 100
-let galaProfit = galaPounds * galaPrice / 100
-let pinkProfit = pinkPounds * pinkPrice / 100
-let totalProfit = fujiProfit + galaProfit + pinkProfit
-
+/////////////// BEGIN SOLUTION 6 /////////////////
+    // convert the price to dollars
+let fujiProfit = fujiPounds * fujiPrice
+let galaProfit = galaPounds * galaPrice
+let pinkProfit = pinkPounds * pinkPrice
 console.log("Profit from fuji: $" + fujiProfit.toFixed(2));
 console.log("Profit from gala: $" + galaProfit.toFixed(2));
 console.log("Profit from pink lady: $" + pinkProfit.toFixed(2));
-console.log("Total Profit: $" + totalProfit.toFixed(2));
-
-
-
+/////////////// END SOLUTION 6 /////////////////
 
 // PROBLEM 7
-
 /*
     Add up all your profits and save 
     the number to a variable called 
@@ -270,5 +255,8 @@ console.log("Total Profit: $" + totalProfit.toFixed(2));
 
     Log `totalProfit` to the console.
 */
-
 // CODE HERE
+/////////////// BEGIN SOLUTION 7 /////////////////
+let totalProfit = fujiProfit + galaProfit + pinkProfit
+console.log("\nTotal Profit: $" + totalProfit.toFixed(2));
+/////////////// END SOLUTION 7 /////////////////
