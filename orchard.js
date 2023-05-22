@@ -75,7 +75,7 @@ let totalAcres = fujiSum + galaSum + pinkSum
 //print the sum of acres picked for each variey and the total acres picked. 
 console.log(fujiSum + " acres of fuji");
 console.log(galaSum + " acres of gala");
-console.log(pinkSum + " acres of pink ladies\n");
+console.log(pinkSum + " acres of pink lady\n");
 console.log(totalAcres + " total acres picked");
 /////////////// END SOLUTION 1 /////////////////
 
@@ -134,7 +134,7 @@ while (acresLeft > 0) {
     days += 1
     acresLeft -= averageDailyAcres
 }
-console.log(days);
+console.log(days + " day(s) left to complete production\n");
 /////////////// END SOLUTION 3 /////////////////
 
 // PROBLEM 4
@@ -159,14 +159,26 @@ console.log(days);
     and use the push method to add new 
     values to the new arrays.
 */
-
 // CODE HERE
 
-//let fujiTons =
-//let galaTons =
-//let pinkTons =
+let fujiTons = []
+let galaTons = []
+let pinkTons = []
+const Ayield = 6.5
 
+//use a for loop to grab each value in the array 'fujiAcres' and add that value to 'fujiSum'
+for (let f1 = 0; f1 < fujiAcres.length; f1++)
+        {fujiTons.push(fujiAcres[f1] * Ayield) }
 
+for (let g1 = 0; g1 < galaAcres.length; g1++)
+        {galaTons.push(galaAcres[g1] * Ayield) }
+
+for (let p1 = 0; p1 < pinkAcres.length; p1++)
+        {pinkTons.push(pinkAcres[p1] * Ayield) }
+
+    console.log("Fuji Tons: "+ JSON.stringify(fujiTons));
+    console.log("Gala Tons: "+ JSON.stringify(galaTons));
+    console.log("Pink Lady Tons: "+ JSON.stringify(pinkTons) +"\n");
 // PROBLEM 5
 
 /*
@@ -184,14 +196,36 @@ console.log(days);
 */
 
 // CODE HERE 
+//declare variables for the sum in Tons of each variety picked
+let fujiTonSum = 0
+let galaTonSum = 0
+let pinkTonSum = 0
+//similar top for loops in SOLUTION 2. 
+// Create a sume foe ake caules from the arrays with Tons, and create a sume for 
+for (let f2 = 0; f2 < fujiTons.length; f2++)
+    {fujiTonSum += fujiTons[f2]}
+for (let g2 = 0; g2 < galaTons.length; g2++)
+    {galaTonSum += galaTons[g2]}
+for (let p2 = 0; p2 < pinkTons.length; p2++)
+    {pinkTonSum += pinkTons[p2]}
+//declare variables for the pounds picked for each variety, using a calculaiton of total Tons
+let fujiPounds = fujiTonSum * 2000 
+let galaPounds = galaTonSum * 2000
+let pinkPounds = pinkTonSum * 2000
+//calcualte total tons and total pounds
+let totalTons = fujiTonSum + galaTonSum + pinkTonSum 
+let totalPounds = totalTons * 2000
+//Pring the sum in tons and pouds for each variety
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
-
-
-
-
+console.log(fujiTonSum + " tons of fuji");
+console.log("(" + fujiPounds + " pounds)\n");
+console.log(galaTonSum + " tons of gala");
+console.log("(" + galaPounds + " pounds)\n");
+console.log(pinkTonSum + " tons of pink lady");
+console.log("(" + pinkPounds + " pounds)\n");
+// print the total in tons and pounds
+console.log(totalTons + " total tons picked");
+console.log("(" + totalPounds + " pounds)\n");
 
 
 // PROBLEM 6
@@ -205,18 +239,24 @@ console.log(days);
 
     The prices are per pound and are 
     written in cents. 
-
+             fujiPrice = .89 
+             galaPrice = .64
+             pinkPrice = .55
     Log each of the profits to the 
     console. 
 */
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = fujiPounds * fujiPrice / 100
+let galaProfit = galaPounds * galaPrice / 100
+let pinkProfit = pinkPounds * pinkPrice / 100
+let totalProfit = fujiProfit + galaProfit + pinkProfit
 
-
+console.log("Profit from fuji: $" + fujiProfit.toFixed(2));
+console.log("Profit from gala: $" + galaProfit.toFixed(2));
+console.log("Profit from pink lady: $" + pinkProfit.toFixed(2));
+console.log("Total Profit: $" + totalProfit.toFixed(2));
 
 
 
