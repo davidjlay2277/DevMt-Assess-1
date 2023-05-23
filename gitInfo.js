@@ -20,7 +20,7 @@ console.log("git:\n" + gitDefinition +"\n");
 */
 
 //CODE HERE
-let  gitHubDefinition  = "A popular remote repository. GitHub is web based, storing your projects in the cloud and allowing for easy sharing, collaboration, archiving and recovery." 
+let  gitHubDefinition  = "A popular remote repository. GitHub is web based. Store your projects in the cloud to allow for easy sharing, collaboration, archiving, and recovery." 
 console.log("GitHub:\n" +  gitHubDefinition  + "\n");
 
 //////////////////PROBLEM 3////////////////////
@@ -30,7 +30,7 @@ console.log("GitHub:\n" +  gitHubDefinition  + "\n");
 */
 
 //CODE HERE
-let gitInitDefinition = "Establish a local repository (or repo) at the current directory. "
+let gitInitDefinition = "Establish a local repository (repo) at the current directory. "
 console.log("git init:\n" +  gitInitDefinition + "\n");
 
 //////////////////PROBLEM 4////////////////////
@@ -49,7 +49,7 @@ console.log("git clone:\n" + gitCloneDefinition +"\n");
 */
 
 //CODE HERE
-gitStatusDefinition = "Provides helpful info on the repo in your current directory. For example, Git Status can identify if a repo exists, if items have been added, and if any items are ready to commit."
+gitStatusDefinition = "Provides helpful info on the repo in your current directory. For example, 'git status' can identify if a repo is ready to use, if items have been added, and if any items are ready to commit."
 console.log("git status:\n" + gitStatusDefinition +"\n");
 //////////////////PROBLEM 6////////////////////
 /*
@@ -80,8 +80,8 @@ gitCommitDefinition = "Acts like saving your files. This will save any changes y
 console.log("git commit:\n" + gitCommitDefinition);
 
 gitCommitCode = " 'git commit' "
-gitCommitMessageCode = "' -m [your message]' "
-console.log("TIP: when using " + gitCommitCode + "be sure to follow up with" + gitCommitMessageCode + "in oder to add a message (or comment) to the changes you are commiting. This will help you keep track of verions.");
+gitCommitMessageCode = " '-m [your message]' "
+console.log("TIP: when using " + gitCommitCode + "be sure to follow up with" + gitCommitMessageCode + "in order to add a message/comment to the changes you are committing. This will help you keep track of versions.\n");
 //////////////////PROBLEM 8////////////////////
 /*
     Create a variable called 'gitPushDefinition'.  
@@ -89,7 +89,7 @@ console.log("TIP: when using " + gitCommitCode + "be sure to follow up with" + g
 */
 
 //CODE HERE
-gitPushDefinition = "Move your recent commits from your local repor to a remote repo. This is hte command that will. Use 'git push' followed by a the desired GitHub URL and 'master'(for pushign the master branch)"
-console.log("git push:\n" + gitPushDefinition +"\n");
+gitPushDefinition = "Move your recent commits from your local repo to a remote repo. In other words, send your changes to GitHub. Use 'git push' followed by the desired GitHub URL and 'master'(for pushing the master branch)"
+console.log("git push:\n" + gitPushDefinition);
 console.log("TIP: You will need to use 'git remote add origin [URL]', and then authenticate, in order to esablish a connection to your remote repo.")
 console.log("\nAuthor: David Lay\nDate: 05/21/23")
