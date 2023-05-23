@@ -72,5 +72,4 @@
 ////////////////// END SOLUTION 2: ///////////////////
 
 //Assessment name: SDLC
-//Completed: 5/21/23
-//Author: David Lay
+console.log("\nAuthor: David Lay\nDate: 05/21/23")

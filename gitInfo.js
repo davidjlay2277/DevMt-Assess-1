@@ -92,4 +92,4 @@ console.log("TIP: when using " + gitCommitCode + "be sure to follow up with" + g
 gitPushDefinition = "Move your recent commits from your local repo to a remote repo. In other words, send your changes to GitHub. Use 'git push' followed by the desired GitHub URL and 'master'(for pushing the master branch)"
 console.log("git push:\n" + gitPushDefinition);
 console.log("TIP: You will need to use 'git remote add origin [URL]', and then authenticate, in order to esablish a connection to your remote repo.")
-console.log("\nAuthor: David Lay\nDate: 05/21/23")
+console.log("\nAuthor: David Lay\nDate: 05/22/23")

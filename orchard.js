@@ -260,3 +260,4 @@ console.log("Profit from pink lady: $" + pinkProfit.toFixed(2));
 let totalProfit = fujiProfit + galaProfit + pinkProfit
 console.log("\nTotal Profit: $" + totalProfit.toFixed(2));
 /////////////// END SOLUTION 7 //////////////////
+console.log("\nAuthor: David Lay\nDate: 05/21/23")

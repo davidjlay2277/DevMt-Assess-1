@@ -34,3 +34,4 @@ if (faveNum === 13){
 for (let i=1; i<1; i++)
   console.log(mName);
 //CODE HERE
+console.log("\nAuthor: David Lay\nDate: 05/21/23");
