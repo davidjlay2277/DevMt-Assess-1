@@ -71,7 +71,6 @@
 
 ////////////////// END SOLUTION 2: ///////////////////
 
-
 //Assessment name: SDLC
 //Completed: 5/21/23
 //Author: David Lay
