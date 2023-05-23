@@ -259,4 +259,4 @@ console.log("Profit from pink lady: $" + pinkProfit.toFixed(2));
 /////////////// BEGIN SOLUTION 7 /////////////////
 let totalProfit = fujiProfit + galaProfit + pinkProfit
 console.log("\nTotal Profit: $" + totalProfit.toFixed(2));
-/////////////// END SOLUTION 7 /////////////////
+/////////////// END SOLUTION 7 //////////////////
